@@ -1,0 +1,192 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<html>
+<head>
+<header>
+<style>
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 50px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 50px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 50px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes floating {
+	0% { transform: translateX(0px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0px); }
+}
+@keyframes unfloating {
+	0% { transform: translateY(0px); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0px); }
+}
+body {
+  background-image: url('https://w0.peakpx.com/wallpaper/109/353/HD-wallpaper-forest-magic-tree.jpg');
+  background-size: cover;
+  
+}
+
+.centerDiv{
+	animation-name: unfloating;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+	margin:auto;
+    height: 600px;
+    width: 50%;
+}
+
+.background{
+	animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: auto;
+    margin-top: auto;
+    height: 600px;
+    width: 450px;
+    position: relative;
+    background-image: url(https://gifdb.com/images/file/blue-orange-color-flames-h31wqyb940cwrdc0.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: coral;
+    border-radius: 125px 60px 50px 100px
+    
+}
+
+.character{
+	animation-name: ununfloating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 600px;
+    width: 450px;
+    position: absolute;
+    background-image: url(https://media.discordapp.net/attachments/1086496076749611110/1107940160647217203/image.png?width=506&height=675);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 125px 60px 50px 100px
+    
+}
+
+.frame{
+	animation-name: ununfloating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: -72px;
+    margin-top: auto;
+    height: 600px;
+    width: 550px;
+    position: relative;
+    background-image: url(https://cdn.discordapp.com/attachments/150776126002823169/1107864273310462072/dcy9ipu-74fdb89e-8af1-41d0-aafc-f69b2185a67a.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 125px 60px 50px 100px
+}
+
+.nameplate{
+  	animation-name: ununfloating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: -55px;
+    margin-top: -85px;
+    height: 25%;
+    width: 130%;
+    position: relative;
+    background-image: url(https://cdn.discordapp.com/attachments/1086496076749611110/1107942850563424347/Bell-Montelione-16-05-2023_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pulse1 {
+  margin-left: -150px;margin-top: -750px;width: 100px;height: 100px;
+  border-radius: 50%;background: #FFFF35;
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  animation: pulse 2s infinite 1s;
+}
+.pulse2 {
+  margin-left: 500px;margin-top: 150px;width: 100px;height: 100px;
+  border-radius: 50%;background: #FFFF35;
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  animation: pulse 2s infinite 2s;
+}
+.pulse3 {
+  margin-left: -170px;margin-top: 120px;width: 100px;height: 100px;
+  border-radius: 50%;background: #FFFF35;
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  animation: pulse 2s infinite 3s;
+}
+.pulse4 {
+  margin-left: 500px;margin-top: 50px;width: 100px;height: 100px;
+  border-radius: 50%;background: #FFFF35;
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  animation: pulse 2s infinite 4s;
+}
+
+</style>
+</header>
+</head>
+<body>
+
+<div class="centerDiv">
+<div class="background">
+<div class="character">
+<div class="frame">
+</div>
+<div class="nameplate">
+</div>
+<div class="pulse1"></div>
+<div class="pulse2"></div>
+<div class="pulse3"></div>
+<div class="pulse4"></div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<script>
+for (var i = 0; i < 9; i++) {
+  $(document).ready(function moveparty(){
+  $(document.getElementsByClassName("whoa")).fadeIn(0)
+  $(document.getElementsByClassName("whoa")).fadeOut(4000)
+  $(document.getElementsByClassName("whoa")).fadeIn(4000)
+  
+  $(document.getElementsByClassName("apenguin")).fadeIn(0)
+  $(document.getElementsByClassName("apenguin")).fadeOut(6000)
+  $(document.getElementsByClassName("apenguin")).fadeIn(6000)
+  
+  $(document.getElementsByClassName("galactic")).fadeIn(0)
+  $(document.getElementsByClassName("galactic")).fadeOut(8000)
+  $(document.getElementsByClassName("galactic")).fadeIn(8000)
+  
+
+  });
+
+}
+ 
+</script>
